@@ -1,0 +1,65 @@
+.main {
+    background-color: #F0F2F5;
+    height: 100%;
+    width: 100%;
+
+    .mainHeader {
+
+        text-align: center;
+        font-size: 3rem;
+        color: #FF10F0;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        margin-top: 100px;
+
+        .cardsContainer {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .main {
+        margin-top: 100px;
+
+        .cardsContainer {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 400px 400px;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        margin-top: 100px;
+
+        .cardsContainer {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 400px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main {
+        margin-top: 100px;
+
+        .cardsContainer {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 200px;
+            justify-content: center;
+        }
+    }
+}

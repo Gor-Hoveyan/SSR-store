@@ -1,0 +1,84 @@
+.header {
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    background-color: #DE3163;
+
+    .menuCheckbox {
+        display: none;
+    }
+
+}
+
+@media (min-width: 869px) {
+    .header {
+        .headerContainer {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .headerLink {
+                padding: 20px;
+                font-size: 1.2rem;
+                color: white;
+            }
+
+
+        }
+        .menuOpener {
+            display: none;
+        }
+        .burgerMenu {
+            .menuLink {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 869px) {
+    .headerLink {
+        display: none;
+        padding: 20px;
+    }
+
+    .menuOpener {
+        display: block;
+        padding: 15px;
+        font-size: 1.7rem;
+        color: white;
+
+    }
+
+    .menuCheckbox:checked~.burgerMenu {
+        display: flex;
+
+    }
+
+    .menuCheckbox:not(:checked)~.burgerMenu {
+        display: none;
+    }
+
+    .burgerMenu {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        color: orangered;
+        font-size: 2rem;
+        flex-direction: column;
+        list-style: none;
+        width: 100%;
+        padding-top: 10%;
+
+        .menuLink {
+            margin: 5% 0;
+            width: 100%;
+            border-bottom: 1px solid gray;
+            text-indent: 5%;
+            padding-bottom: 5%;
+        }
+    }
+}

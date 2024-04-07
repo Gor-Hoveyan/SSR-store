@@ -1,0 +1,51 @@
+.productCardContainer {
+    background-color: white;
+
+    .productCardName {
+        margin-top: 10px;
+    }
+
+    .cardPrice {
+        font-weight: bolder;
+        color: #FF10F0;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    .cardBtn {
+        border: 0;
+        outline: 0;
+        padding: 10px 15px;
+        border-radius: 15%;
+        background-color: #DE3163;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 500px) {
+    .productCardContainer {
+        max-width: 400px;
+        padding: 25px;
+        text-align: center;
+        margin-bottom: 50px;
+        border-radius: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    .productCardContainer {
+        max-width: 300px;
+        padding: 25px;
+        text-align: center;
+        margin-bottom: 50px;
+        border-radius: 15%;
+
+        .productCardImage {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

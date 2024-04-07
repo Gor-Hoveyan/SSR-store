@@ -1,0 +1,19 @@
+.footerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #df4671;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+
+    .footerParagraph {
+        margin: 15px 0;
+    }
+    .footerLink {
+        color: lightblue;
+    }
+}
