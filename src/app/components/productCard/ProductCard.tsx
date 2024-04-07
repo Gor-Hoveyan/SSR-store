@@ -12,7 +12,7 @@ export default async function ProductCard({ product }: { product: ProductType })
             <Image className={styles.productCardImage} src={product.image} alt={product.title} width={200} height={200} />
             <p className={styles.productCardName}>{product.title}</p>
             <p className={styles.cardPrice}>{product.price}$</p>
-            <Link href={`http://localhost:3000/products/${product.id}`}><button className={styles.cardBtn}> <BsCart2 fontWeight={700} />Details</button></Link>
+            <Link href={`/products/${product.id}`}><button className={styles.cardBtn}> <BsCart2 fontWeight={700} />Details</button></Link>
             <p>
                 <AiFillStar color='orange' />{product.rating.rate}   <BsCart4 />{product.rating.count}
             </p>
