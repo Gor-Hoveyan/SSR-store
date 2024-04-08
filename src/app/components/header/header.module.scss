@@ -56,14 +56,14 @@
 
     .menuCheckbox:checked~.burgerMenu {
         //display: flex;
-        transform: translateX((-100%));
-        transition-duration: 1s;
+        transform: translateX((0));
+        transition-duration: 0.8s;
     }
 
     .menuCheckbox:not(:checked)~.burgerMenu {
        // display: none;
-        transform: translateX((100%));
-        transition-duration: 1s;
+        transform: translateX((-100%));
+        transition-duration: 0.8s;
     }
 
     .burgerMenu {
@@ -77,7 +77,6 @@
         width: 100%;
         padding-top: 10%;
         position: absolute;
-        right: 100%;
         
 
         .menuLink {
