@@ -40,6 +40,7 @@
 }
 
 @media (max-width: 869px) {
+
     .headerLink {
         display: none;
         padding: 20px;
@@ -50,28 +51,34 @@
         padding: 15px;
         font-size: 1.7rem;
         color: white;
-
+        z-index: 100;
     }
 
     .menuCheckbox:checked~.burgerMenu {
-        display: flex;
-
+        //display: flex;
+        transform: translateX((-100%));
+        transition-duration: 1s;
     }
 
     .menuCheckbox:not(:checked)~.burgerMenu {
-        display: none;
+       // display: none;
+        transform: translateX((100%));
+        transition-duration: 1s;
     }
 
     .burgerMenu {
         width: 100vw;
         height: 100vh;
-        background-color: white;
-        color: orangered;
+        background-color: #e74c78;
+        color: white;
         font-size: 2rem;
         flex-direction: column;
         list-style: none;
         width: 100%;
         padding-top: 10%;
+        position: absolute;
+        right: 100%;
+        
 
         .menuLink {
             margin: 5% 0;
